@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<title>Блокнот с возможностью сохранения в LocalStorage</title>
+<script src="storage.js" defer></script>
+<style>
+	article:hover {
+		color: white;
+	}
+
+	#form {
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		top: 300px;
+		left: 10%;
+		padding: 20px;
+		background-color: black;
+		box-shadow: 0px 0px 30px blue;
+		color: #d1d3d4;
+		text-align: center;
+
+	}
+
+	input {
+		cursor: pointer;
+		margin: 5px 15px 25px;
+	}
+</style>
+</head>
+<body style="background-image: url('PL.jpg'); background-repeat: no-repeat; background-size: cover;">
+<form id="form">
+	<p>Выберите цвет:</p>
+	<input type="color" value="#ff0000">
+	<button id="butt" class="btn btn-default btn-xs">Выбрать</button>
+</form>
+
+
+	<div id="popup" style="position: absolute; top: 100px; left: 40%; background-color: black; box-shadow: 0px 0px 70px blue; z-index: 10; width: 400px; height: 700px; overflow: auto; padding: 20px; color: #d1d3d4; font-size: 15px; font-family: verdana,sans-serif;" class="text-center"><strong style="font-size: 20px; margin-bottom: 40px">История редактирования:</strong></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2 style="font-weight: bold; margin-top: 100px; color: #bcbec0" class="text-center">Текстовый редактор с возможностью сохранения контента в LocalStorage</h2>
+			</div>
+			<div class="col-xs-12" style="padding: 20px; box-shadow: 0px 0px 30px red; height: 400px; margin-top: 50px; background-color: black; color: #d1d3d4; overflow: auto" id="text">Если дебютный альбом группы, "Lost Paradise" , вышедший в 1991, изменил метал-сцену того времени и снискал почет у парней из Autopsy (а вокал Холмса тех лет был единственным в своем роде), то сегодня речь пойдет о не менее интересном и печальном альбоме, который выполнен в стиле... синти-поп. Впрочем, можете считать этот релиз дарк-электро-роком. Поэтому скажу сразу: если вы относитесь к тем дуболомным "почитателям" тяжелой музыки, которые считают, что "только первый альбом - true", или еще что-нибудь подобное, то не тратьте время на прочтение этого ревью.Приступая к обзору, хочется отметить, что продолжительность альбома около часа, приятно. В музыкальном плане большая половина альбома звучит разнообразно и динамично. Разве что треки "Behind The Grey" и "Made The Same" весьма похожи друг на друга, что не типично для Paradise Lost. Вам не понравился "One Second" (1997), и вы жаждете найти на пластинке гроулинг времен "Gothic" (1991)? Очень жаль, потому что на этом релизе вокал Ника стал еще чище, чем на предыдущем альбоме. Вокальные партии звучат размеренно и печально. Хотя, если взять концертные версии песен, то там Холмс очень красиво растягивает слова, чем напоминает Фредди Меркюри.На "Host" можно также услышать бэк-вокал Ли Морриса и женский голос - песни "Harbour" и "It's Too Late". Из материала, представленного на пластинке, хотелось бы выделить композиции "Year Of Summer" (барабаны и гитары, пропущенные через синтезатор, на протяжении всего альбома красиво выдвинуты на передний план) и "Host", на которой хочется остановиться поподробнее. В этой песне можно услышать классические инструменты, красиво сочетающиеся с гитарным соло, и электронными вставками. В этот альбом, пожалуй, нужно втянуться. Возможно, вы сумеете его полюбить и понять так, как это сделал я. Ах, да - напоследок у меня для вас эпичное заявление: даже в свои самые мрачные времена (экспериментальный период 1997-2002 и в особенности "Believe In Nothing", 2001) ребята из Потерянного Рая были на голову выше расхваленной нынче (за что!?) Katatonia.</div>
+			<div class="col-xs-12" style="height: 130px; margin-top: 30px; background-color: black; box-shadow: 0px 0px 30px red; display: flex; justify-content: space-evenly; align-items: center">
+				<button style="color: red; background-color: black; box-shadow: 0px 0px 30px red; padding: 10px 80px; font-size: 16px; align-self: flex-end; margin-bottom: 25px" class="btn" id="save">Сохранить</button>
+				<button style="color: red; align-self: flex-start; margin-top: 25px; background-color: black; box-shadow: 0px 0px 30px red; padding: 10px 150px; font-size: 16px" class="btn" id="edit">Редактировать</button>
+				<button style="color: red; background-color: black; box-shadow: 0px 0px 30px red; padding: 10px 80px; font-size: 16px; align-self: flex-end; margin-bottom: 25px" class="btn" id="cancel">Отмена</button>
+
+				
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>
