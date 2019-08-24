@@ -1,0 +1,108 @@
+  
+body {
+  background-image: url('PL.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#popup {
+  position: absolute;
+  top: 100px; left: 40%;
+  background-color: black;
+  box-shadow: 0px 0px 70px blue;
+  z-index: 10; width: 400px;
+  height: 700px;
+  overflow: auto;
+  padding: 20px;
+  color: #d1d3d4; 
+  font-size: 15px; 
+  font-family: verdana,sans-serif;
+}
+
+#popup strong {
+  font-size: 20px; 
+  margin-bottom: 40px
+}
+
+h2 {
+  font-weight: bold; 
+  margin-top: 100px; 
+  color: #bcbec0
+}
+
+#text {
+  padding: 20px; 
+  box-shadow: 0px 0px 30px red; 
+  height: 400px; 
+  margin-top: 50px; 
+  background-color: black; 
+  color: #d1d3d4; 
+  overflow: auto;
+}
+
+#butts {
+  height: 130px; 
+  margin-top: 30px; 
+  background-color: black; 
+  box-shadow: 0px 0px 30px red; 
+  display: flex; 
+  justify-content: space-evenly; 
+  align-items: center;
+}
+
+#save {
+  color: red; 
+  background-color: black; 
+  box-shadow: 0px 0px 30px red; 
+  padding: 10px 80px; 
+  font-size: 16px; 
+  align-self: flex-end; 
+  margin-bottom: 25px;
+}
+
+#edit {
+  color: red; 
+  align-self: flex-start; 
+  margin-top: 25px; 
+  background-color: black; 
+  box-shadow: 0px 0px 30px red; 
+  padding: 10px 150px; 
+  font-size: 16px;
+}
+
+#cancel {
+  color: red; 
+  background-color: black; 
+  box-shadow: 0px 0px 30px red; 
+  padding: 10px 80px; 
+  font-size: 16px; 
+  align-self: flex-end; 
+  margin-bottom: 25px;
+}
+
+
+
+
+
+  article:hover {
+    color: white;
+  }
+
+  #form {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 300px;
+    left: 10%;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0px 0px 30px blue;
+    color: #d1d3d4;
+    text-align: center;
+
+  }
+
+  input {
+    cursor: pointer;
+    margin: 5px 15px 25px;
+  }
